@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Tip Calculator</h1>
+    </header>
+    <div class="container">
+      <form action="" onsubmit="func()">
+        <div class="inputs">
+          <label for="billTotal">
+            <span class="align">Enter Bill total</span>
+          </label>
+          <div>
+            <span class="align">$</span>
+            <input
+              class="billTotal"
+              type="number"
+              name="billTotal"
+              id="billTotal"
+              autocomplete="off"
+              step="0.01"
+              required
+            />
+          </div>
+        </div>
+
+        <p>Suggested Tips</p>
+
+        <div class="buttons">
+          <button
+            class="btn"
+            type="submit"
+            id="percentage"
+            onclick="return18()"
+          >
+            18%
+          </button>
+          <button
+            class="btn"
+            type="submit"
+            id="percentage"
+            onclick="return20()"
+          >
+            20%
+          </button>
+          <button
+            class="btn"
+            type="submit"
+            id="percentage"
+            onclick="return25()"
+          >
+            25%
+          </button>
+          <button
+            class="btn"
+            type="submit"
+            id="percentage"
+            onclick="return30()"
+          >
+            30%
+          </button>
+        </div>
+        <div>
+          <button class="btn reset" type="reset" onclick="resetTipField()">
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <span class="result" id="tipResult"></span>
+      <span class="result" id="totalResult"></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

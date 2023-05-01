@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* CSS COLOR VARIABLES */
+
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #778899;
+  --light: #eee;
+  --lightgray: #a9a9a9;
+  --green: #1fd655;
+  --lightgreen: #90ee90;
+  --bisque: #ffe4c4;
+  --pink: #ec4899;
+  --orange: #ff9500;
+}
+
+body {
+  background-color: var(--bisque);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 0%;
+  border: 2px solid var(--lightgray);
+  border-radius:7px;
+}
+
+.inputs {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+header,
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--gray);
+  margin-top: 20px;
+  font-family: Arial;    
+  color: var(--dark);
+  padding: 20px 30px;   
+  text-transform: uppercase;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--gray);
+  margin-top: 20px;
+  font-family: Arial;    
+  color: var(--dark);
+  padding: 1px 30px;   
+  text-transform: uppercase;
+}
+
+.billTotal {
+    padding: 0.6rem;
+}
+
+.btn {
+  background-color: var(--lightgray);
+  color: var(--dark);
+  border: 1px solid black;
+  border-radius: 7px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  /* border-radius: 20px; */
+  font-size: 1.4rem;
+  font-weight: lighter;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.reset {
+  background-color: var(--light);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  transition: 0.1s ease-in-out;
+}
